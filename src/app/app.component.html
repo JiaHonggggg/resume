@@ -1,14 +1,13 @@
 <div class="appContainer">
   <app-header></app-header>
+  <h2 class="mt-5 ps-1">Skill</h2>
   <div class="row">
-    <div class="col-12 col-md-4">
-      <app-skill></app-skill>
-    </div>
-    <div class="col-12 col-md-4">
-      <app-skill></app-skill>
-    </div>
-    <div class="col-12 col-md-4">
-      <app-skill></app-skill>
-    </div>
+    <ng-container *ngFor="let item of skills">
+      <div class="col-12 col-md-4">
+        <app-skill [title]="item?.title" [content]="item?.content"></app-skill>
+      </div>
+    </ng-container>
   </div>
+  <h2 class="mt-5 ps-1">Experience</h2>
+
 </div>

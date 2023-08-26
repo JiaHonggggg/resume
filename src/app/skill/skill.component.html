@@ -1,10 +1,10 @@
 <div class="skill card w-100">
   <div class="title">
-    Front-end
+    {{ title }}
   </div>
   <div class="content">
-    <p>Angular / AngularJS Vue</p>
-    <p>Bootstrap</p>
-    <p>Html / CSS Javascript / jQuery</p>
+    <p *ngFor="let item of content">
+      {{ item?.name }}
+    </p>
   </div>
 </div>
