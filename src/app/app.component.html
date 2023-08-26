@@ -9,5 +9,19 @@
     </ng-container>
   </div>
   <h2 class="mt-5 ps-1">Experience</h2>
-
+  <div class="row">
+    <ng-container *ngFor="let item of experience; let i = index;">
+      <div class="col-12">
+        <app-experience
+          [name]="item?.name"
+          [jobTitle]="item?.jobTitle"
+          [date]="item?.date"
+          [link]="item?.link"
+          [work]="item?.work"
+          [project]="item?.project"
+          [number]="i+1"
+        ></app-experience>
+      </div>
+    </ng-container>
+  </div>
 </div>

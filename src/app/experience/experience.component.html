@@ -1,0 +1,26 @@
+<div class="experience card">
+  <div class="columnLine">
+    <div class="number">
+      {{ number }}
+    </div>
+  </div>
+  <div class="content">
+    <div class="name">
+      <a [href]="link" target="_blank">{{ name }}</a>
+    </div>
+    <div class="d-flex">
+      <div class="jobTitle">{{ jobTitle }}</div>
+      <div class="date">{{ date }}</div>
+    </div>
+    <div class="work">
+      <div class="title">負責項目</div>
+      <div class="listContent">
+        <p *ngFor="let item of work">{{ item }}</p>
+      </div>
+      <div class="title">開發 / 維護 專案</div>
+      <div class="listContent">
+        <p *ngFor="let item of project">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+.experience {
+  display: flex;
+  margin: .5rem 0;
+  flex-direction: row;
+  position: relative;
+
+  .columnLine {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    border-radius: 15px 0 0 15px;
+    &::before {
+      content: '';
+      border-left: 5px solid rgb(31, 93, 31);
+    }
+
+    .number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      background-color: rgb(31, 93, 31);
+      color: #fff;
+    }
+  }
+
+  .content {
+    padding: 1rem;
+    .name {
+      a{
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(31, 93, 31);
+        text-decoration: none;
+        cursor: pointer;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .jobTitle {
+      font-size: 18px;
+      margin: .5rem 1rem 0 0;
+      color: #6a6a6a;
+    }
+
+    .date {
+      font-size: 18px;
+      font-style: italic;
+      color: #6a6a6a;
+      margin-top: .5rem;
+    }
+
+    .work {
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 1.5rem 0 .5rem;
+        color: #494949;
+      }
+      .listContent {
+        font-size: 18px;
+
+        p{
+          margin: 0 0 .5rem 0;
+          color: #494949;
+        }
+      }
+    }
+
+  }
+}
