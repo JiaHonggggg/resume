@@ -13,13 +13,25 @@
       <div class="date">{{ date }}</div>
     </div>
     <div class="work">
-      <div class="title">負責項目</div>
+      <div class="title">工作內容</div>
       <div class="listContent">
         <p *ngFor="let item of work">{{ item }}</p>
       </div>
       <div class="title">開發 / 維護 專案</div>
       <div class="listContent">
-        <p *ngFor="let item of project">{{ item }}</p>
+        <ng-container *ngFor="let item of project">
+          <a *ngIf="item?.url" [href]="item?.url" target="_blank">
+            {{ item?.name }}
+          </a>
+          <p *ngIf="!item?.url">
+            {{ item?.name }}
+          </p>
+          <!-- {{ item.name }} -->
+        </ng-container>
+        <!-- <p *ngFor="let item of project">
+          
+          {{ item | json }}
+        </p> -->
       </div>
     </div>
   </div>

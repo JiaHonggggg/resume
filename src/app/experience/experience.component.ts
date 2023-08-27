@@ -11,6 +11,6 @@ export class ExperienceComponent {
   @Input() date: string | undefined;
   @Input() link: string | undefined;
   @Input() work: Array<string> | undefined;
-  @Input() project: Array<string> | undefined ;
+  @Input() project: Array<any> | undefined ;
   @Input() number: number | undefined;
 }

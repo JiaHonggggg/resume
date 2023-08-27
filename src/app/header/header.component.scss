@@ -1,3 +1,5 @@
+@import "../../assets/scss/variable";
+
 .header {
   display: flex;
   flex-direction: row;
@@ -35,7 +37,7 @@
 
       .jobTitle {
         font-weight: bold;
-        color: rgb(31, 93, 31);
+        color: $primary-color;
         margin-top: .5rem;
       }
     }

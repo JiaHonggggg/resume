@@ -12,29 +12,29 @@ export class AppComponent {
     {
       title: 'Front-end',
       content: [
-        { name: 'Angular / AngularJS', icon: '' },
-        { name: 'Vue', icon: '' },
-        { name: 'Bootstrap', icon: '' },
-        { name: 'Html', icon: '' },
-        { name: 'CSS', icon: '' },
-        { name: 'Javascript / jQuery', icon: '' }
+        { name: 'Angular / AngularJS' },
+        { name: 'Vue' },
+        { name: 'Bootstrap' },
+        { name: 'Html' },
+        { name: 'CSS' },
+        { name: 'Javascript / jQuery' }
       ]
     },
     {
       title: 'Back-end',
       content: [
-        { name: 'Laravel', icon: '' },
-        { name: 'PHP', icon: '' },
-        { name: 'MS-SQL', icon: '' },
-        { name: 'MySQL / MariaDB', icon: '' }
+        { name: 'Laravel' },
+        { name: 'PHP' },
+        { name: 'MS-SQL' },
+        { name: 'MySQL / MariaDB' }
       ]
     },
     {
       title: 'Others',
       content: [
-        { name: 'GitLab (CI/CD)', icon: '' },
-        { name: 'Nginx', icon: '' },
-        { name: 'Docker', icon: '' }
+        { name: 'GitLab (CI/CD)' },
+        { name: 'Nginx' },
+        { name: 'Docker' }
       ]
     }
   ]
@@ -46,15 +46,14 @@ export class AppComponent {
       date: '2023/04 ~ NOW',
       link: 'https://www.webglsoft.com/',
       work: [
+        '串接 SAP Spartacus、SAP hybris',
+        'SEO 優化（Click Stream、GTM、GA4）',
         '現有專案維護',
-        '現有專案維護',
-        '現有專案維護',
-        '現有專案維護',
-        '現有專案維護',
+        'i18n'
       ],
       project: [
-        '屈臣氏',
-        '百佳超市'
+        { name: '屈臣氏', url: 'https://www.watsons.com.tw/' },
+        { name: '百佳超市', url: 'https://www.pns.hk/zh-hk/aboutParknshop' }
       ]
     },
     {
@@ -75,9 +74,9 @@ export class AppComponent {
         '綠界金流串接(信用卡一次性支付、信用卡定期定額)'
       ],
       project: [
-        '三菱化學承攬商安衛管理系統',
-        '2023 小北百貨活動網站',
-        '臨海長照體系官網'
+        { name: '三菱化學承攬商安衛管理系統', url: '' },
+        { name: '2023 小北百貨活動網站', url: 'http://se2023.close.fomoshop.com/' },
+        { name: '臨海長照體系官網', url: 'https://www.linhai.com.tw/' },
       ]
     },
     {
@@ -90,7 +89,7 @@ export class AppComponent {
         '導入容器化架構並以 Docker 實作',
       ],
       project: [
-        '流量分析監控系統',
+        { name: '流量分析監控系統', url: '' },
       ]
     }
   ]
